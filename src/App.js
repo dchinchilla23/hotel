@@ -1,22 +1,34 @@
-import logo from './logo.svg';
+import im1 from './im1.jpg';
 import './App.css';
+import React,{Fragment} from 'react';
+import Crudapp from './Components/crud';
 
 function App() {
+  const formulario = () => { 
+
+
+    
+  }
+
+
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <h1>formulario de reservas</h1>
+      
+        <form>
+          <input
+            name="titulo"
+            className='form-control my-2 '
+          />
+          <button className='btn btn-primary'>Enviar</button>
+          <Crudapp/>
+          <img src={im1}/>
+         
+        </form>
       </header>
     </div>
   );
